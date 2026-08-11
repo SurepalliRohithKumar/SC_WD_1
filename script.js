@@ -10,6 +10,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
+
 // Mobile menu
 
 const menuBtn = document.querySelector(".menu-btn");
@@ -19,6 +20,7 @@ menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
+
 // Close mobile menu after clicking a link
 
 document.querySelectorAll(".nav-links a").forEach(link => {
@@ -26,6 +28,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         navLinks.classList.remove("active");
     });
 });
+
 
 // Smooth fade-in animation
 
@@ -49,9 +52,11 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
+
 // Button hover animation
 
 document.querySelectorAll(".btn").forEach(btn => {
+
     btn.addEventListener("mouseover", () => {
         btn.style.boxShadow = "0 0 20px #ffb703";
     });
@@ -59,4 +64,5 @@ document.querySelectorAll(".btn").forEach(btn => {
     btn.addEventListener("mouseout", () => {
         btn.style.boxShadow = "none";
     });
-})
+
+});
